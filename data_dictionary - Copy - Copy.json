@@ -1,0 +1,458 @@
+{
+  "ID_indiv": {
+    "description": "Unique identifier for each individual in the dataset.",
+    "code type": "integer",
+    "feature type": "id",
+    "values": {
+      "min": 4001,
+      "max": 6872003
+    }
+  },
+  "relationship_to_head": {
+    "description": "Relationship of the individual to head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "1": "Head in current year; previous year Head who was mover-out nonresponse by the time of the current year interview"
+    }
+  },
+  "sex": {
+    "description": "Sex of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "1": "Male",
+      "2": "Female"
+    }
+  },
+  "race": {
+    "description": "Race of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK",
+      "1": "White",
+      "2": "Black",
+      "3": "American Indian, Aleut, Eskimo",
+      "4": "Asian, Pacific Islander",
+      "5": "Mentions Latino origin or descent",
+      "6": "Other"
+    }
+  },
+  "hispanicity": {
+    "description": "Hispanic descent of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK",
+      "0": "Inap.: is not Spanish/Hispanic",
+      "1": "Mexican",
+      "2": "Mexican American",
+      "3": "Chicano",
+      "4": "Puerto Rican",
+      "5": "Cuban",
+      "6": "Combination; more than one mention",
+      "7": "Other Spanish; Hispanic; Latino"
+    }
+  },
+  "region_grewup": {
+    "description": "Region where head of family unit grew up.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "DK; NA; NA region where current year Head grew up",
+      "1": "Northeast",
+      "2": "North Central",
+      "3": "South",
+      "4": "West",
+      "5": "Alaska, Hawaii",
+      "6": "Foreign Country"
+    }
+  },
+  "state_grewup": {
+    "description": "State where head of family unit grew up.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "DK; NA; refused",
+      "0": "Inap.: U.S. territory or foreign country",
+      "min": 1,
+      "max": 51
+    }
+  },
+  "area_size_grewup": {
+    "description": "Size of the area where head of family unit grew up.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK",
+      "1": "Farm; rural area; country",
+      "2": "Small town; any size town, suburb",
+      "3": "Large city; any size city",
+      "4": "Other; several different places; combination of places"
+    }
+  },
+  "both_parents_grewup": {
+    "description": "Whether both natural parents of head of family unit were present during upbringing until the age of 16.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "year": {
+    "description": "The year of the survey or data collection.",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "min": 87,
+      "max": 96
+    }
+  },
+  "age": {
+    "description": "Age of head of family unit.",
+    "code type": "integer",
+    "feature type": "continuous",
+    "values": {
+      "min": 18,
+      "max": 96,
+      "97": "97 and higher"
+    }
+  },
+  "father_tot_nb_children": {
+    "description": "Total number of children born to this individual's father.",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "-1": "NA; DK; no information was gathered",
+      "min": 1,
+      "max": 20
+    }
+  },
+  "mother_tot_nb_children": {
+    "description": "Total number of children born to this individual's mother.",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "-1": "NA; DK; no information was gathered",
+      "min": 1,
+      "max": 15
+    }
+  },
+  "nb_births_tot": {
+    "description": "Total number of children born to this individual.",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "-1": "NA; DK",
+      "min": 0,
+      "max": 20
+    }
+  },
+  "nb_children_fu": {
+    "description": "Actual number of persons currently in the family unit who are neither head nor wife from newborns through those 17 years of age, whether or not they are actually children of the head or wife.",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "min": 0,
+      "max": 10
+    }
+  },
+  "married": {
+    "description": "Marital status of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "DK; NA",
+      "1": "Married or permanently cohabiting, wife, or husband is present in the FU",
+      "2": "Single, never legally married and no wife or husband is present in the FU",
+      "3": "Widowed and no wife or husband is present in the FU",
+      "4": "Divorced and no wife or husband is present in the FU",
+      "5": "Separated; legally married but no wife or husband is present in the FU (the spouse may be in an institution)"
+    }
+  },
+  "family_change": {
+    "description": "Family (of the head) composition change between last year and current year such as movers-in or movers-out of the family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "0": "No change; no movers-in or movers-out of the family",
+      "1": "Change in members other than Head or Wife",
+      "2": "Head is the same person as in previous year but Wife left or died; Head has new Wife; used also when cohabiting, nonrelative female becomes Wife",
+      "3": "Wife from previous year is now Head",
+      "4": "Previous year female Head got married--husband (usually a nonsample member) is now Head-- Used also when cohabiting, nonrelative male becomes Head",
+      "5": "Some sample member other than 1991 Head or Wife has become Head of this FU (Used primarily for male and unmarried female splitoffs)",
+      "6": "Some female other than previous year Head got married and her husband (nonsample member) is now Head (Used primarily for married female splitoffs)",
+      "7": "Other (used for recombined families)--these are usually 1968 Heads and Wives who have parted for a year or more, been interviewed separately, and who have reconciled at some time since the previous year interview but prior to the current year interview"
+    }
+  },
+  "home_type": {
+    "description": "Type of home or housing unit of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "DK; NA",
+      "1": "One-family house",
+      "2": "Two-family house; duplex",
+      "3": "Apartment; housing project",
+      "4": "Mobile home; trailer",
+      "5": "Rowhouse; townhouse",
+      "6": "Other"
+    }
+  },
+  "housing_status_ownership": {
+    "description": "Ownership status of home of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "1": "Owns or is buying home, either fully or jointly; mobile home owners who rent lots are included here",
+      "2": "Pays rent",
+      "3": "Neither owns nor rents"
+    }
+  },
+  "institutionalization": {
+    "description": "Whether individual was ever institutionalized while connected to a responding family, where institutions include educational facilities (e.g. college dormitory), jail, hospital, and the military.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "0": "All others",
+      "1": "This individual has been in an institution while connected to a responding family for at least one year during the study"
+    }
+  },
+  "disability_whether": {
+    "description": "Do you (head of family unit) have any physical or nervous condition that limits the type of work or the amount of work you can do?",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK; Wild code",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "work_disability_degree": {
+    "description": "For work you (head of family unit) can do, how much does it limit the amount of work you can do--a lot, somewhat, or just a little?",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "-1": "NA; DK",
+      "0": "Inap.: either no limiting condition or limiting condition that prevents from doing any work in the first place",
+      "1": "Not at all",
+      "2": "Just a little",
+      "3": "Somewhat",
+      "4": "A lot"
+    }
+  },
+  "physical_health": {
+    "description": "Self-reported quality of health in general.",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "-1": "DK; NA",
+      "1": "Poor", 
+      "2": "Fair", 
+      "3": "Good",
+      "4": "Very good",
+      "5": "Excellent"
+    }
+  },
+  "veteran_status": {
+    "description": "Veteran status of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK; refused",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "extra_school": {
+    "description": "Additional schooling or educational attainment of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "grades_completed": {
+    "description": "Highest grade or year of school that head of family unit has completed.",
+    "code type": "integer",
+    "feature type": "ordinal",
+    "values": {
+      "-1": "NA; DK",
+      "0": "Inap.: from Immigrant or Latino samples; born or moved in after the current year interview; main family nonresponse by current year or mover-out nonresponse by previous year; in an institution in both previous year and current year; not a person aged 16 or older.",
+      "min": 1,
+      "max": 17
+    }
+  },
+  "region_current": {
+    "description": "Current region of residence of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "DK; NA",
+      "1": "Northeast",
+      "2": "North Central",
+      "3": "South",
+      "4": "West",
+      "5": "Alaska, Hawaii",
+      "6": "Foreign Country"
+    }
+  },
+  "state_current": {
+    "description": "Current state of residence of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "DK; NA",
+      "0": "Inap.: U.S. territory or foreign country",
+      "min": 1,
+      "max": 51
+    }
+  },
+  "religion": {
+    "description": "Religious affiliation of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK",
+      "0": "None; atheist; agnostic",
+      "1": "Catholic",
+      "2": "Jewish",
+      "3": "Protestant unspecified",
+      "4": "Other non-Christian: Muslim, Rastafarian, etc.",
+      "5": "Greek/Russian/Eastern Orthodox",
+      "6": "Other"
+    }
+  },
+  "employed_whether": {
+    "description": "Are you (head of family unit) doing any work for money now at all?",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "0": "Inap.: working now or only temporarily laid off",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "employment_status_type": {
+    "description": "Current employment status of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "1": "Working now",
+      "2": "Only temporarily laid off, sick leave or maternity leave",
+      "3": "Looking for work, unemployed",
+      "4": "Retired",
+      "5": "Permanently disabled; temporarily disabled",
+      "6": "Keeping house",
+      "7": "Student",
+      "8": "Other; workfare; in prison or jail"
+    }
+  },
+  "industry": {
+    "description": "The 3-digit industry code from 1970 Census of Population applied to the current main job of head of family unit.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK; refused",
+      "0": "Inap.: not working for money now",
+      "1": "Agriculture, Forestry, and Fisheries",
+      "2": "Mining",
+      "3": "Construction",
+      "4": "Lumber and wood products, except furniture",
+      "5": "Stone, clay, and glass products",
+      "6": "Metal industries",
+      "7": "Machinery, except electrical",
+      "8": "Electrical machinery, equipment, and supplies",
+      "9": "Transportation equipment",
+      "10": "Professional and photographic equipment, and watches",
+      "11": "Food and kindred products",
+      "12": "Textile mill products",
+      "13": "Apparel and other fabricated textile products",
+      "14": "Printing, publishing, and allied industries",
+      "15": "Chemicals and allied products",
+      "16": "Petroleum and coal products",
+      "17": "Rubber and miscellaneous plastic products",
+      "18": "Leather and leather products",
+      "19": "Transportation",
+      "20": "Communications",
+      "21": "Utilities and sanitary services",
+      "22": "Wholesale trade",
+      "23": "Retail trade",
+      "24": "Finance, insurance, and real estate",
+      "25": "Business and repair services",
+      "26": "Personal services",
+      "27": "Entertainment and recreation services",
+      "28": "Professional and related services",
+      "29": "Public administration"
+    }
+  },
+  "income_labor_tot": {
+    "description": "Total last year labor income of current head of family including labor part of farm income, business income, market gardening income, roomers and boarders income, along with the head's wages, bonuses, overtime, commissions and income from professional practice or trade.",
+    "code type": "float",
+    "feature type": "continuous",
+    "values": {
+      "min": 0,
+      "max": 999998,
+      "999999": "999999 or more"
+    }
+  },
+  "income_needs_standard_orshansky": {
+    "description": "Orshansky-type poverty threshold as annual needs standard for the last year's family unit.",
+    "code type": "float",
+    "feature type": "continuous",
+    "values": {
+      "min": 1500,
+      "max": 12000
+    }
+  },
+  "income_needs_standard_census": {
+    "description": "U.S. Census Bureau poverty threshold as annual needs standard for the last year's family unit.",
+    "code type": "float",
+    "feature type": "continuous",
+    "values": {
+      "min": 5000,
+      "max": 31000
+    }
+  },
+  "vacation_last_year": {
+    "description": "Whether head of family unit took any vacation or time off during last year.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "-1": "NA; DK; refused",
+      "0": "Inap.: not working for money now",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  "person_number": {
+    "description": "Person number within the family.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "1": "Individuals living in core sample families at the time of the 1968 interview; individuals living in Latino sample families at the time of the 1990 (or 1992) interview; individuals living in Immigrant sample families at the time of the 1997 (or 1999) or 2017 (or 2019) interview",
+      "2": "Husband of a core sample 1968 Head living in an institution at the time of the 1968 interview; spouse of a Latino sample 1990 Head living in an institution at the time of the 1990 interview; spouse of an Immigrant sample 1997/1999 or 2017/2019 Head/Reference Person living in an institution at the time of the 1997/1999 or 2017/2019 interview",
+      "3": "Children or stepchildren of a 1968 core sample Head who were under 25 and living in institutions at the time of the 1968 interview; children of a Latino sample 1990 (or 1992) Head who were under 25 and living in institutions at the time of the 1990 (or 1992) interview; children of an Immigrant sample 1997 (or 1999) or 2017 (or 2019) Head/Reference Person who were under 25 and living in institutions at the time of the 1997 (or 1999) or 2017 (or 2019) interview",
+      "4": "Individuals born into the core sample since the 1968 interview, the Latino sample since the 1990 (or 1992) interview, or the Immigrant sample since the 1997 (or 1999) or 2017 (or 2019) interview and who have at least one sample parent; these persons are sample members",
+      "5": "Individuals who moved into a core family for the first time after the 1968 interview or who have no sample parent; individuals from the Latino sample, other than the spouse of a 1990 (or 1992) Head, who moved out in the year preceding the 1990 (or 1992) interview or who moved in for the first time after the 1990 (or 1992) interview; individuals from the 97 Immigrant sample, other than the spouse of a 1997 (or 1999), who moved out in the year preceding the 1997 (or 1999) interview or who moved in for the first time after the 1997 (or 1999) interview; individuals from the 17 Immigrant sample, other than the spouse of a 2017 (or 2019) Head/Reference Person, who moved out in the year preceding the 2017 (or 2019) interview or who moved in for the first time after the 2017 (or 2019) interview. These individuals are nonsample unless they were born after the initial wave and have at least one sample parent.",
+      "6": "Spouse of a core sample 1968 Head who moved out in the year prior to the 1968 interview; spouse of a Latino sample 1990 Head who moved out in the year preceding the 1990 (or 1992) interview; spouse of an Immigrant sample 1997 (or 1999) Head who moved out in the year preceding the 1997 (or 1999) interview. Spouse of an Immigrant sample 2017 (or 2019) Reference Person who moved out in the year preceding the 2017 (or 2019) interview. These individuals are nonsample."
+    }
+  },
+  "sample_or_nonsample": {
+    "description": "Indicates whether the individual is part of the sample (including all persons living in the PSID families in 1968 plus anyone subsequently born to or adopted by a sample person) or non-sample and also flags followable non-sample individuals.",
+    "code type": "integer",
+    "feature type": "categorical",
+    "values": {
+      "0": "This individual is joint inclusion sample",
+      "1": "This individual is nonsample and not part of the elderly group",
+      "2": "This individual is original sample",
+      "3": "This individual was a followable nonsample parent",
+      "4": "This individual is nonsample elderly"
+    }
+  }
+}
